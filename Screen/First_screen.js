@@ -1,5 +1,5 @@
-import  React  from 'react'
-import { TextInput, Pressable, View, Button, Text, TouchableOpacity,StyleSheet} from "react-native";
+import  React  from 'react';
+import { TextInput, Pressable, View, Text, TouchableOpacity} from "react-native";
 import { CheckBox} from "react-native-elements";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Fontisto from'react-native-vector-icons/Fontisto';
@@ -31,6 +31,9 @@ import Entypo from 'react-native-vector-icons/Entypo';
              <Fontisto name='locked' size={25} color={'#1690fa'} backgroundColor={'#f7f2f5'} height={30} width={30} borderRadius={50}/> 
              <TextInput placeholder='**********' type='passwords'/>
              
+        </View>
+        <View style={Styles.CheckBox}>
+            <Text>Remember Me</Text>
         </View>
         
         <CheckBox title="Remember Me"/>
@@ -121,6 +124,15 @@ const Styles = StyleSheet.create({
         color:'white',
         textAlign: 'center',
     },
+    CheckBox:{
+        width:25,
+        height:25,
+        borderColor:'black',
+        borderWidth: 2,
+        marginLeft: 10,
+
+
+    },
    create:{
     flexDirection: 'row',
     justifyContent:'space-between',
@@ -132,8 +144,6 @@ const Styles = StyleSheet.create({
     padding: 5,
     width: 100,
     marginRight: 5,
-    
-
    },
 
    text1:{
